@@ -1,5 +1,5 @@
 # 💫 About Me:
-Student in Web and Mobile Web Development at #Energy Generation|<br> Student in Software Engineering at #ALX Africa & #Holberton School
+Student in Web and Mobile Web Development at # Energy Generation|<br> Student in Software Engineering at # ALX Africa & # Holberton School
 
 
 ## 🌐 Socials:
