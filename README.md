@@ -1,5 +1,5 @@
 # 💫 About Me:
-Junior full stack web and mobile web developer  <br> Software Engineering student at <strong> Alxafrica & Holbertonschool </strong> || <strong> Miscrosoft Learn Student Ambassador </strong> <br> <strong> GitHub Global Campus Student </strong>
+Junior full stack web and mobile web developer  <br> Software Engineering student at <strong> Alxafrica & Holbertonschool </strong> <br> <strong> Miscrosoft Learn Student Ambassador </strong> <br> <strong> GitHub Global Campus Student </strong>
 
 
 ## 🌐 Socials:
