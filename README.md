@@ -1,5 +1,4 @@
 # 💫 About Me:
-Student in Web and Mobile Web Development at <strong> Energy Generation|</strong> <br> Student in Software Engineering at <strong> ALX Africa & Holberton School </strong>
 Junior full stack web and mobile web developer  <br> Software Engineering student at <strong> Alxafrica & Holbertonschool </strong> || <strong> Miscrosoft Learn Student Ambassador </strong> <br> <strong> GitHub Global Campus Student </strong>
 
 
