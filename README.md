@@ -3,7 +3,7 @@
 
 
 <br clear="both">
-###
+
 
 <div align="center">
   <img height="200" src="https://media.giphy.com/media/USV0ym3bVWQJJmNu3N/giphy.gif"  />
