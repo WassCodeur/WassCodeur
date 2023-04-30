@@ -2,7 +2,7 @@
 <p align="left">Hello World!! I'm Wachiou BOURAIMA a Junior web developer and software engineering student at African Leadership X|| Microsoft Learn Student and DSN Ambassador.</p>
 
 ###
-
+<br clear="both">
 ###
 
 <div align="center">
@@ -44,7 +44,7 @@
 ###
 
 
-
+<br clear="both">
 
 
 # 💻 Tech Stack:
@@ -78,21 +78,28 @@
 
 ###
 
-
+<br clear="both">
 
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=WassCodeur&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=WassCodeur&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=WassCodeur&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
+<br clear="both">
+
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=WassCodeur&theme=radical&no-frame=false&no-bg=false&margin-w=4)
+
+<br clear="both">
 
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
+<br clear="both">
+
 ### 😂 Random Dev Meme
 <img src="https://random-memer.herokuapp.com/" width="512px"/>
 
----
+<br clear="both">
+
 [![](https://visitcount.itsvg.in/api?id=WassCodeur&icon=0&color=0)](https://visitcount.itsvg.in)
