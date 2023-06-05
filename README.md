@@ -86,9 +86,6 @@
 
 <br clear="both">
 [![WassCodeur's GitHub | Topics](https://stats.quine.sh/WassCodeur/topics-over-time?theme=dark)](https://quine.sh)
-<br clear="both">
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=WassCodeur&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
 <br clear="both">
 
