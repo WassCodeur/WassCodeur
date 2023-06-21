@@ -13,7 +13,7 @@
 <br clear="both">
 
 
-## 🌐 Socials:
+🌐 Socials:
 
 ###
 
