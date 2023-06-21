@@ -76,7 +76,7 @@
 </div>
 
 ###
-
+<div align="center">
 <br clear="both">
 
 # 📊 GitHub Stats:
@@ -87,10 +87,9 @@
 <br clear="both">
 ## 🏆 GitHub Trophies
 
-<div align="center">
   
   ![](https://github-profile-trophy.vercel.app/?username=WassCodeur&theme=radical&no-frame=false&no-bg=false&margin-w=4)  
-</div>
+
 ### ✍️ Random Dev Quote
 
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
@@ -103,3 +102,4 @@
 <br clear="both">
 
 [![](https://visitcount.itsvg.in/api?id=WassCodeur&label=Profile%20Views&pretty=false)](https://visitcount.itsvg.in)
+</div>
