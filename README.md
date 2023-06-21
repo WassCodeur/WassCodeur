@@ -86,6 +86,7 @@
 
 <br clear="both">
 ## 🏆 GitHub Trophies
+
 ![](https://github-profile-trophy.vercel.app/?username=WassCodeur&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
 ### ✍️ Random Dev Quote
