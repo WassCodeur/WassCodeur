@@ -1,4 +1,4 @@
-# 💫 About Me:
+<div align="center"># 💫 About Me</div>
 <h4 align="center">Hello World!! I'm Wachiou BOURAIMA a Junior web developer and software engineering student at African Leadership X || Microsoft Learn Student and DSN Ambassador.</h4>
 
 <br clear="both">
@@ -13,7 +13,7 @@
 <br clear="both">
 
 
-🌐 Socials:
+<div align="center"># 🌐 Socials</div>
 
 ###
 
@@ -46,7 +46,7 @@
 <br clear="both">
 
 
-# 💻 Tech Stack:
+<div align="center"># 💻 Tech Stack</div>
 
 ###
 
@@ -79,7 +79,7 @@
 <div align="center">
 <br clear="both">
 
-# 📊 GitHub Stats:
+<div align="center"># 📊 GitHub Stats:</div>
 ![](https://github-readme-stats.vercel.app/api?username=WassCodeur&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=WassCodeur&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=WassCodeur&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
