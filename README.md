@@ -75,30 +75,44 @@
 </div>
 
 ###
-<div align="center">
 <br clear="both">
 
 # 📊 GitHub Stats:
-
+<div align="center">
+  
 ![](https://github-readme-stats.vercel.app/api?username=WassCodeur&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=WassCodeur&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=WassCodeur&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
+</div>
+
 <br clear="both">
-## 🏆 GitHub Trophies
+
+###
+
+# 🏆 GitHub Trophies
 
   
   ![](https://github-profile-trophy.vercel.app/?username=WassCodeur&theme=radical&no-frame=false&no-bg=false&margin-w=4)  
 
 # ✍️ Random Dev Quote
 
+<div align="center">
 
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
+</div>
+
 <br clear="both">
 
+###
+
+<div align="center">
+  
 ## 😂 Random Dev Meme
 
+<div align="center">
+  
 <img src="https://random-memer.herokuapp.com/" width="512px"/>
 
 <br clear="both">
