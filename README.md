@@ -8,6 +8,8 @@
   <img height="200" src="https://media.giphy.com/media/USV0ym3bVWQJJmNu3N/giphy.gif"  />
 </div>
 
+
+
 ###
 
 <br clear="both">
@@ -86,14 +88,19 @@
 
 </div>
 
+
+
 <br clear="both">
 
 ###
 
 # 🏆 GitHub Trophies
-
+<div align="center">
   
   ![](https://github-profile-trophy.vercel.app/?username=WassCodeur&theme=radical&no-frame=false&no-bg=false&margin-w=4)  
+
+</div>
+
 
 # ✍️ Random Dev Quote
 
@@ -106,7 +113,7 @@
 <br clear="both">
 
 ###
-  
+
 # 😂 Dev Meme
 
 <div align="center">
