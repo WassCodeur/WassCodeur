@@ -106,10 +106,8 @@
 <br clear="both">
 
 ###
-
-<div align="center">
   
-## 😂 Random Dev Meme
+# 😂 Dev Meme
 
 <div align="center">
   
