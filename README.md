@@ -3,7 +3,7 @@
 <br clear="both">
 
 <a href="https://github.com/webcrumbs-community/webcrumbs" align="center">
-  <img
+  <img align="center"
     src="https://github.com/webcrumbs-community/webcrumbs/blob/main/src/img/contributor-badge.png"
     alt="WebCrumbs Contributor"
     width="200px"
