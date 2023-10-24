@@ -120,15 +120,5 @@
 
 <br clear="both">
 
-###
-
-# 😂 Dev Meme
-
-<div align="center">
-  
-<img src="https://random-memer.herokuapp.com/" width="512px"/>
-
-<br clear="both">
-
 [![](https://visitcount.itsvg.in/api?id=WassCodeur&label=Profile%20Views&pretty=true)](https://visitcount.itsvg.in)
 </div>
