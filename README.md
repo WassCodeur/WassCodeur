@@ -2,13 +2,15 @@
 <h4 align="center">Hello World!! I'm Wachiou BOURAIMA a Junior web developer and software engineering student at African Leadership X || Microsoft Learn Student and DSN Ambassador.</h4>
 <br clear="both">
 
-<a href="https://github.com/webcrumbs-community/webcrumbs" align="center">
-  <img align="center"
+<div align="center">
+<a href="https://github.com/webcrumbs-community/webcrumbs" >
+  <img
     src="https://github.com/webcrumbs-community/webcrumbs/blob/main/src/img/contributor-badge.png"
     alt="WebCrumbs Contributor"
     width="200px"
   />
 </a>
+</div>
 
 <br clear="both">
 <br clear="both">
