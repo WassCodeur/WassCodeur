@@ -105,7 +105,16 @@
   ![](https://github-profile-trophy.vercel.app/?username=WassCodeur&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4)  
 
 </div>
+<br clear="both">
 
+# 🏅 Badges
+<div align="center">
+  
+[![An image of @wasscodeur's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/wasscodeur)](https://holopin.io/@wasscodeur)
+
+
+</div>
+<br clear="both">
 
 # ✍️ Random Dev Quote
 
