@@ -24,6 +24,8 @@
 ###
 
 <br clear="both">
+<br clear="both">
+<br clear="both">
 
 
 # 🌐 Socials
@@ -54,6 +56,8 @@
 </div>
 
 <br clear="both">
+<br clear="both">
+<br clear="both">
 
 # 💻 Tech Stack
 
@@ -77,6 +81,8 @@
 
 ###
 <br clear="both">
+<br clear="both">
+<br clear="both">
 
 # 📊 GitHub Stats:
 <div align="center">
@@ -92,6 +98,8 @@
 
 
 <br clear="both">
+<br clear="both">
+<br clear="both">
 
 ###
 
@@ -102,6 +110,8 @@
 
 </div>
 <br clear="both">
+<br clear="both">
+<br clear="both">
 
 # 🏅 Badges
 <div align="center">
@@ -110,6 +120,7 @@
 
 
 </div>
+<br clear="both">
 <br clear="both">
 
 # ✍️ Random Dev Quote
@@ -120,6 +131,7 @@
 
 </div>
 
+<br clear="both">
 <br clear="both">
 <div align="center">
 
