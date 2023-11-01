@@ -16,8 +16,6 @@
 <br clear="both">
 
 
-<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/SikwLrCfj8aFgirWOC" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://media.giphy.com/media/USV0ym3bVWQJJmNu3N/giphy.gif">via GIPHY</a></p>
-
 <div align="center">
   
   <img height="200" src="https://media.giphy.com/media/USV0ym3bVWQJJmNu3N/giphy.gif" />
