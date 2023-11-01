@@ -17,8 +17,7 @@
 
 
 <div align="center">
-    <img src="![codehub](https://github.com/WassCodeur/WassCodeur/assets/100234404/1958e6d5-cd3f-4a0c-b766-1b613d6d6088)
-" width="100"/>
+    <img src="https://github.com/WassCodeur/WassCodeur/assets/100234404/1958e6d5-cd3f-4a0c-b766-1b613d6d6088" width="100"/>
   <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
   
 </div>
