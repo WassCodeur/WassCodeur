@@ -136,7 +136,6 @@
 <br clear="both">
 <div align="center">
 
-[![](https://visitcount.itsvg.in/api?id=WassCodeur&label=Profile%20Views&pretty=true)](https://visitcount.itsvg.in)
+[![](https://visitcount.itsvg.in/api?id=WassCodeur&label=Profile%20Views&pretty=false)](https://visitcount.itsvg.in)
 
-[![](https://visitcount.itsvg.in/api?id=wasscodeur&label=Profile%20Views&pretty=false)](https://visitcount.itsvg.in)
 </div>
