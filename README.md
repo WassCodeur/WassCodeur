@@ -28,6 +28,14 @@
 <br clear="both">
 <br clear="both">
 
+# Streetcred
+
+<div align="center">
+<a href="https://www.tublian.com/profile/WassCodeur?ss=true"><img src="https://t74hnvwwsd.execute-api.us-east-1.amazonaws.com/dev/ft/profile/streetcred/badge/WassCodeur?type=with_score"></a>
+</div>
+
+<br clear="both">
+<br clear="both">
 
 # 🌐 Socials
 
