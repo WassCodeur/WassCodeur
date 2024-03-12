@@ -1,5 +1,5 @@
 # 💫 About Me
-<h4 align="center">Hello World!! I'm Wachiou BOURAIMA a Junior web developer and software engineering student at African Leadership X || Microsoft Learn Student and DSN Ambassador.</h4>
+<h4 align="center">Hello World!! I'm Wachiou BOURAIMA a software developer || Microsoft Learn Student and DSN Ambassador | Open source advocate.</h4>
 <br clear="both">
 
 <div align="center">
