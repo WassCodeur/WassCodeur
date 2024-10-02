@@ -1,5 +1,5 @@
 # 💫 About Me
-<h4 align="center"> software developer | GSoC '24 @ThePSF (FURY) | Proud Pythonista | Open Source Contributor/Advocate | Microsoft Learn Student Ambassador </h4>
+<h4 align="center"> Software developer | GSoC '24 @ThePSF (FURY) | Proud Pythonista | Open Source Contributor/Advocate | Microsoft Learn Student Ambassador </h4>
 <br clear="both">
 
 <div align="center">
