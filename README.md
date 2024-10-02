@@ -1,5 +1,5 @@
 # 💫 About Me
-<h4 align="center">Hello World!! I'm Wachiou BOURAIMA a software developer || Microsoft Learn Student and DSN Ambassador | Open source advocate.</h4>
+<h4 align="center"> software developer | GSoC '24 @ThePSF (FURY) | Proud Pythonista | Open Source Contributor/Advocate | Microsoft Learn Student Ambassador </h4>
 <br clear="both">
 
 <div align="center">
@@ -90,7 +90,7 @@
 ![](https://github-readme-streak-stats.herokuapp.com/?user=WassCodeur&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=WassCodeur&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
-![WassCodeur's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=WassCodeur&theme=github-compact)
+
 
 </div>
 
