@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Wachiou BOURAIMA  (Wasiu Ibrahim) A.K.A WassCodeur">
+    <meta name="description"
+        content="Wachiou BOURAIMA - Wasiu Ibrahim - Pythonista, Open Source Advocate, Google Summer of Code 2024 Contributor. Building the Python community in Togo and West Africa.">
+    <meta name="keywords"
+        content="Wachiou BOURAIMA, Wasiu Ibrahim, WassCodeur,  Wassiou Bouraima, Python Togo, Python Africa, PyCon Togo, Open SOurce, Backend, Software ENgineer, PyCon, Python, PSF, Pythonista, Open Source Advocate, Google Summer of Code, Python Community, Togo, West Africa, wasscodeur, wass, wassiou, wachiou, Desamos, Bouraima, BOURAIMA, WASSIOU, wAsiu, WasIOU, BOuraima, BURAHIMA, WassCodeur, WASSCODEUR, WACHIOU BOURAIMA, Wachiou Bouraima, Wachiou Bouraïma, BOURAÏMA">
+    <title>Wa<\>Codeur</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        /* Navigation */
+        nav {
+            border-bottom: 1px solid #e5e5e5;
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            height: 52px;
+            width: auto;
+            display: block;
+            filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #fda400;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #666;
+            cursor: pointer;
+        }
+
+        .language-switch {
+            background: none;
+            border: 1px solid #e5e5e5;
+            padding: 6px 12px;
+            border-radius: 4px;
+            color: #666;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .language-switch:hover {
+            color: #fda400;
+            border-color: #fda400;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px 40px;
+        }
+
+        header {
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        h1 span {
+            color: #fda400;
+        }
+
+        .name-pronunciation {
+            font-size: 0.95rem;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: #666;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .intro {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 30px;
+        }
+
+        .tag {
+            background: #f5f5f5;
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            color: #666;
+            font-size: 1.3rem;
+            transition: color 0.2s;
+        }
+
+        .social-links a:hover {
+            color: #fda400;
+        }
+
+        .bluesky-icon {
+            width: 1.1rem;
+            height: 1.1rem;
+            vertical-align: middle;
+        }
+
+        section {
+            margin: 60px 0;
+            scroll-margin-top: 80px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .projects-grid {
+            display: grid;
+            gap: 30px;
+        }
+
+        .project-card {
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            padding: 25px;
+            transition: border-color 0.2s;
+        }
+
+        .project-card:hover {
+            border-color: #fda400;
+        }
+
+        .project-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+
+        .project-card p {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .project-card .meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.85rem;
+            color: #999;
+            margin-bottom: 15px;
+        }
+
+        .project-card .meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .project-link {
+            color: #fda400;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .project-link:hover {
+            color: #e69500;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+        }
+
+        .contact-info {
+            display: grid;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+        }
+
+        .contact-item i {
+            color: #fda400;
+            font-size: 1.2rem;
+            width: 25px;
+        }
+
+        .contact-bluesky-icon {
+            width: 20px;
+            height: 20px;
+            display: block;
+        }
+
+        .contact-item a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: #fda400;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid #e5e5e5;
+            text-align: center;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Menu */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 81px;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                gap: 15px;
+                border-bottom: 1px solid #e5e5e5;
+                display: none;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .container {
+                padding: 40px 15px 30px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .nav-left {
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-left">
+                <img src="assets/images/wassCodeur8style.png" alt="WassCodeur" class="logo">
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active" data-en="Home" data-fr="Accueil">Home</a></li>
+                <li><a href="#projects" data-en="Projects" data-fr="Projets">Projects</a></li>
+                <li><a href="#community" data-en="Community" data-fr="Communauté">Community</a></li>
+                <li><a href="#contact" data-en="Contact" data-fr="Contact">Contact</a></li>
+                <li><a href="blog.html" data-en="Blog" data-fr="Blog">Blog</a></li>
+            </ul>
+            <button class="language-switch" onclick="toggleLanguage()" id="langBtn">FR</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Home Section -->
+        <header id="home">
+            <h1>Wachiou <span>BOURAIMA</span></h1>
+            <p class="name-pronunciation" data-en="Pronunciation: Wasiu Ibrahim"
+                data-fr="Prononciation : Wassiou Bouraima">Pronunciation: <strong>Wasiu Ibrahim</strong></p>
+            <p class="subtitle" data-en="Pythonista | Open Source Advocate"
+                data-fr="Pythoniste | Défenseur de l'Open Source">Pythonista | Open Source Advocate</p>
+
+            <div class="tags">
+                <span class="tag" data-en="Python" data-fr="Python">Python</span>
+                <span class="tag" data-en="FastAPI" data-fr="FastAPI">FastAPI</span>
+                <span class="tag" data-en="Django" data-fr="Django">Django</span>
+                <span class="tag" data-en="Flask" data-fr="Flask">Flask</span>
+                <span class="tag" data-en="Open Source" data-fr="Open Source">Open Source</span>
+                <span class="tag" data-en="Backend" data-fr="Backend">Backend</span>
+                <span class="tag" data-en="Community Builder" data-fr="Constructeur de Communauté">Community
+                    Builder</span>
+            </div>
+
+            <p class="intro" data-en="passionateDesc" data-fr="passionateDescFr">
+                Passionate about Python and open source. Google Summer of Code 2024 contributor with
+                The Python Software Foundation (FURY). Self-taught developer who turned curiosity into code. Building
+                the Python community in Togo and West Africa.
+            </p>
+
+            <div class="social-links">
+                <a href="https://github.com/WassCodeur" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/wasscodeur" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/WassCodeur" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <!-- <a href="https://bsky.app/profile/wasscodeur.bsky.social" target="_blank" aria-label="BlueSky">
+                    <img src="https://cdn.simpleicons.org/bluesky/fda400" alt="BlueSky" class="bluesky-icon">
+                </a> -->
+                <a href="https://discord.com/users/WassCodeur" target="_blank" aria-label="Discord">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://medium.com/@WassCodeur" target="_blank" aria-label="Medium">
+                    <i class="fab fa-medium"></i>
+                </a>
+                <a href="mailto:b.wachiou@pytogo.org" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 data-en="Featured Work" data-fr="Projets Principaux">Featured Work</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>FURY</h3>
+                    <p data-en="furyDesc" data-fr="furyDescFr">Scientific visualization in Python - GSoC 2024 project
+                        with The Python Software Foundation. Advanced 3D rendering and visualization engine.</p>
+                    <a href="https://fury.gl/" target="_blank" class="project-link" data-en="viewProject"
+                        data-fr="viewProjectFr">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>DIPY</h3>
+                    <p data-en="dipyDesc" data-fr="dipyDescFr">Diffusion Imaging in Python - Leading open-source library
+                        for diffusion MRI analysis with 150+ contributors.</p>
+                    <a href="https://dipy.org/" target="_blank" class="project-link" data-en="viewProject"
+                        data-fr="viewProjectFr">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Python Togo (Python Software Community Togo)</h3>
+                    <p data-en="pythonTogoDesc" data-fr="pythonTogoDescFr">Co-founder and organizer. Building the Python
+                        ecosystem and community in Togo through workshops, conferences, and educational programs.</p>
+                    <a href="https://www.pytogo.org/" target="_blank" class="project-link" data-en="viewOrg"
+                        data-fr="viewOrgFr">View Organization →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Python Projects from GitHub -->
+        <section>
+            <h2 data-en="Recent Python Projects" data-fr="Projets Python Récents">Recent Python Projects</h2>
+            <div id="github-projects" class="projects-grid">
+                <div class="loading" data-en="loadingProjects" data-fr="loadingProjectsFr">Loading projects from
+                    GitHub...</div>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="projects.html"
+                    style="color: #fda400; text-decoration: none; font-weight: 500; font-size: 1rem;"
+                    data-en="viewAllProjects" data-fr="voirTousProjets">View All Projects →</a>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section id="community">
+            <h2 data-en="Community" data-fr="Communauté">Community</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>PyCon Togo</h3>
+                    <p><strong data-en="coOrgChair" data-fr="coOrgChairFr">Co-organizer & Chair PyCon Togo 2025</strong>
+                        - <span data-en="pyconTogoDesc" data-fr="pyconTogoDescFr">Leading the organization of PyCon Togo
+                            conference and building the Python ecosystem in Togo through workshops and educational
+                            programs.</span></p>
+                    <a href="https://pycontg.pytogo.org/" target="_blank" class="project-link" data-en="learnMoreFr"
+                        data-fr="learnMoreFr">Learn More →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>PyCon Africa</h3>
+                    <p><strong data-en="iocRole" data-fr="iocRoleFr">IOC (International Organizing Committee)</strong> -
+                        <span data-en="pyconAfricaDesc" data-fr="pyconAfricaDescFr">Contributing to the growth of Python
+                            communities across Africa through collaboration and knowledge sharing at the continental
+                            level.</span>
+
+                    </p>
+                    <a href="https://africa.pycon.org/" target="_blank" class="project-link" data-en="learnMoreFr"
+                        data-fr="learnMoreFr">Learn More →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Google Summer of Code</h3>
+                    <p><strong data-en="gsocRole" data-fr="gsocRoleFr">2024 Contributor</strong> - <span
+                            data-en="gsocDesc" data-fr="gsocDescFr">The Python Software Foundation (FURY). Working on
+                            scientific visualization and 3D rendering features.</span></p>
+                    <a href="https://summerofcode.withgoogle.com/" target="_blank" class="project-link"
+                        data-en="learnMore" data-fr="learnMoreFr">Learn More →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Microsoft Learn Student Ambassador</h3>
+                    <p><strong data-en="mlsaRole" data-fr="mlsaRoleFr">Ambassador</strong> - <span data-en="mlsaDesc"
+                            data-fr="mlsaDescFr">Empowering students through technology education, workshops, and
+                            community events.</span></p>
+                    <a href="https://www.youtube.com/@msatogo" target="_blank" class="project-link" data-en="learnMore"
+                        data-fr="learnMoreFr">Learn More →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>PyLadies</h3>
+                    <p><strong data-en="pyladiesRole" data-fr="pyladiesRoleFr">Contributor</strong> - <span
+                            data-en="pyladiesDesc" data-fr="pyladiesDescFr">Supporting women in tech and the Python
+                            community through mentoring and advocacy.</span></p>
+                    <a href="https://pyladies.com/" target="_blank" class="project-link" data-en="learnMore"
+                        data-fr="learnMoreFr">Learn More →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>FURY-GL & DIPY</h3>
+                    <p><strong data-en="contribRole" data-fr="contribRoleFr">Contributor</strong> - <span
+                            data-en="contribDesc" data-fr="contribDescFr">Contributing to open-source scientific
+                            visualization and neuroimaging analysis projects.</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 data-en="Contact Me" data-fr="Me Contacter">Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:b.wachiou@pytogo.org">b.wachiou@pytogo.org</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/WassCodeur" target="_blank">@WassCodeur</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/wasscodeur" target="_blank">wasscodeur</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-twitter"></i>
+                    <a href="https://twitter.com/WassCodeur" target="_blank">@WassCodeur</a>
+                </div>
+                <div class="contact-item">
+                    <img src="https://cdn.simpleicons.org/bluesky/fda400" alt="BlueSky" class="contact-bluesky-icon">
+                    <a href="https://bsky.app/profile/wasscodeur.bsky.social"
+                        target="_blank">@wasscodeur.bsky.social</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-discord"></i>
+                    <a href="https://discord.com/users/WassCodeur" target="_blank">@WassCodeur</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p> <span data-en="copyright" data-fr="copyrightFr"></span> <a href='https://sergekoudoro.com'
+                    style="text-decoration: none; color: orange;">sergekoudoro.com </a></p>
+        </footer>
+    </div>
+
+    <script>
+        // Translations
+        const translations = {
+            passionateDesc: {
+                en: "Passionate about Python and open source. Google Summer of Code 2024 contributor with The Python Software Foundation (FURY). Self-taught developer who turned curiosity into code. Building the Python community in Togo and West Africa.",
+                fr: "Passionné par Python et l'open source. Contributeur Google Summer of Code 2024 avec The Python Software Foundation (FURY). Développeur autodidacte qui a transformé la curiosité en code. Construire la communauté Python au Togo et en Afrique de l'Ouest."
+            },
+            passionateDescFr: {
+                en: "Passionate about Python and open source. Google Summer of Code 2024 contributor with The Python Software Foundation (FURY). Self-taught developer who turned curiosity into code. Building the Python community in Togo and West Africa.",
+                fr: "Passionné par Python et l'open source. Contributeur Google Summer of Code 2024 avec The Python Software Foundation (FURY). Développeur autodidacte qui a transformé la curiosité en code. Construire la communauté Python au Togo et en Afrique de l'Ouest."
+            },
+            furyDesc: {
+                en: "Scientific visualization in Python - GSoC 2024 project with The Python Software Foundation. Advanced 3D rendering and visualization engine.",
+                fr: "Visualisation scientifique en Python - Projet GSoC 2024 avec The Python Software Foundation. Moteur de rendu 3D et de visualisation avancé."
+            },
+            furyDescFr: {
+                en: "Scientific visualization in Python - GSoC 2024 project with The Python Software Foundation. Advanced 3D rendering and visualization engine.",
+                fr: "Visualisation scientifique en Python - Projet GSoC 2024 avec The Python Software Foundation. Moteur de rendu 3D et de visualisation avancé."
+            },
+            dipyDesc: {
+                en: "Diffusion Imaging in Python - Leading open-source library for diffusion MRI analysis with 150+ contributors.",
+                fr: "Imagerie de Diffusion en Python - Bibliothèque open-source leader pour l'analyse d'IRM de diffusion avec 150+ contributeurs."
+            },
+            dipyDescFr: {
+                en: "Diffusion Imaging in Python - Leading open-source library for diffusion MRI analysis with 150+ contributors.",
+                fr: "Imagerie de Diffusion en Python - Bibliothèque open-source leader pour l'analyse d'IRM de diffusion avec 150+ contributeurs."
+            },
+            pythonTogoDesc: {
+                en: "Co-founder and organizer. Building the Python ecosystem and community in Togo through workshops, conferences, and educational programs.",
+                fr: "Co-fondateur et organisateur. Construire l'écosystème Python et la communauté au Togo à travers des ateliers, des conférences et des programmes éducatifs."
+            },
+            pythonTogoDescFr: {
+                en: "Co-founder and organizer. Building the Python ecosystem and community in Togo through workshops, conferences, and educational programs.",
+                fr: "Co-fondateur et organisateur. Construire l'écosystème Python et la communauté au Togo à travers des ateliers, des conférences et des programmes éducatifs."
+            },
+            loadingProjects: {
+                en: "Loading projects from GitHub...",
+                fr: "Chargement des projets depuis GitHub..."
+            },
+            loadingProjectsFr: {
+                en: "Loading projects from GitHub...",
+                fr: "Chargement des projets depuis GitHub..."
+            },
+            coOrgChair: {
+                en: "Co-organizer & Chair PyCon Togo 2025",
+                fr: "Co-organisateur et Président de PyCon Togo 2025"
+            },
+            coOrgChairFr: {
+                en: "Co-organizer & Chair PyCon Togo 2025",
+                fr: "Co-organisateur et Président de PyCon Togo 2025"
+            },
+            pyconTogoDesc: {
+                en: "Leading the organization of PyCon Togo conference and building the Python ecosystem in Togo through workshops and educational programs.",
+                fr: "Diriger l'organisation de la conférence PyCon Togo et construire l'écosystème Python au Togo à travers des ateliers et des programmes éducatifs."
+            },
+            pyconTogoDescFr: {
+                en: "Leading the organization of PyCon Togo conference and building the Python ecosystem in Togo through workshops and educational programs.",
+                fr: "Diriger l'organisation de la conférence PyCon Togo et construire l'écosystème Python au Togo à travers des ateliers et des programmes éducatifs."
+            },
+            iocRole: {
+                en: "IOC (International Organizing Committee)",
+                fr: "IOC (Comité International d'Organisation)"
+            },
+            iocRoleFr: {
+                en: "IOC (International Organizing Committee)",
+                fr: "IOC (Comité International d'Organisation)"
+            },
+            pyconAfricaDesc: {
+                en: "Contributing to the growth of Python communities across Africa through collaboration and knowledge sharing at the continental level.",
+                fr: "Contribuer à la croissance des communautés Python à travers l'Afrique par la collaboration et le partage de connaissances au niveau continental."
+            },
+            pyconAfricaDescFr: {
+                en: "Contributing to the growth of Python communities across Africa through collaboration and knowledge sharing at the continental level.",
+                fr: "Contribuer à la croissance des communautés Python à travers l'Afrique par la collaboration et le partage de connaissances au niveau continental."
+            },
+            gsocRole: {
+                en: "2024 Contributor",
+                fr: "Contributeur 2024"
+            },
+            gsocRoleFr: {
+                en: "2024 Contributor",
+                fr: "Contributeur 2024"
+            },
+            gsocDesc: {
+                en: "The Python Software Foundation (FURY). Working on scientific visualization and 3D rendering features.",
+                fr: "The Python Software Foundation (FURY). Travail sur les fonctionnalités de visualisation scientifique et de rendu 3D."
+            },
+            gsocDescFr: {
+                en: "The Python Software Foundation (FURY). Working on scientific visualization and 3D rendering features.",
+                fr: "The Python Software Foundation (FURY). Travail sur les fonctionnalités de visualisation scientifique et de rendu 3D."
+            },
+            mlsaRole: {
+                en: "Ambassador",
+                fr: "Ambassadeur"
+            },
+            mlsaRoleFr: {
+                en: "Ambassador",
+                fr: "Ambassadeur"
+            },
+            mlsaDesc: {
+                en: "Empowering students through technology education, workshops, and community events.",
+                fr: "Autonomiser les étudiants par l'éducation technologique, les ateliers et les événements communautaires."
+            },
+            mlsaDescFr: {
+                en: "Empowering students through technology education, workshops, and community events.",
+                fr: "Autonomiser les étudiants par l'éducation technologique, les ateliers et les événements communautaires."
+            },
+            pyladiesRole: {
+                en: "Contributor",
+                fr: "Contributeur"
+            },
+            pyladiesRoleFr: {
+                en: "Contributor",
+                fr: "Contributeur"
+            },
+            pyladiesDesc: {
+                en: "Supporting women in tech and the Python community through mentoring and advocacy.",
+                fr: "Soutenir les femmes en technologie et dans la communauté Python à travers le mentorat et le plaidoyer."
+            },
+            pyladiesDescFr: {
+                en: "Supporting women in tech and the Python community through mentoring and advocacy.",
+                fr: "Soutenir les femmes en technologie et dans la communauté Python à travers le mentorat et le plaidoyer."
+            },
+            contribRole: {
+                en: "Contributor",
+                fr: "Contributeur"
+            },
+            contribRoleFr: {
+                en: "Contributor",
+                fr: "Contributeur"
+            },
+            contribDesc: {
+                en: "Contributing to open-source scientific visualization and neuroimaging analysis projects.",
+                fr: "Contribuer aux projets de visualisation scientifique et d'analyse d'imagerie cérébrale open-source."
+            },
+            contribDescFr: {
+                en: "Contributing to open-source scientific visualization and neuroimaging analysis projects.",
+                fr: "Contribuer aux projets de visualisation scientifique et d'analyse d'imagerie cérébrale open-source."
+            },
+            viewProject: {
+                en: "View Project →",
+                fr: "Voir le Projet →"
+            },
+            viewProjectFr: {
+                en: "View Project →",
+                fr: "Voir le Projet →"
+            },
+            viewOrg: {
+                en: "View Organization →",
+                fr: "Voir l'Organisation →"
+            },
+            viewOrgFr: {
+                en: "View Organization →",
+                fr: "Voir l'Organisation →"
+            },
+            learnMore: {
+                en: "Learn More →",
+                fr: "En Savoir Plus →"
+            },
+            learnMoreFr: {
+                en: "Learn More →",
+                fr: "En Savoir Plus →"
+            },
+            copyright: {
+                en: `Built with ❤️ by Wachiou Bouraima © ${new Date().getFullYear()} | Inspired from `,
+                fr: `Conçu avec ❤️ par Wachiou Bouraima © ${new Date().getFullYear()} | Inspiré de`
+            },
+            copyrightFr: {
+                en: `Built with ❤️ by Wachiou Bouraima © ${new Date().getFullYear()} | Inspired from `,
+                fr: `Conçu avec ❤️ par Wachiou Bouraima © ${new Date().getFullYear()} | Inspiré de`
+            },
+            seeSource: {
+                en: "See the source",
+                fr: "Voir la source"
+            },
+            seeSourceFr: {
+                en: "See the source",
+                fr: "Voir la source"
+            },
+            viewAllProjects: {
+                en: "View All Projects →",
+                fr: "Voir Tous les Projets →"
+            },
+            voirTousProjets: {
+                en: "View All Projects →",
+                fr: "Voir Tous les Projets →"
+            }
+        };
+
+        // Initialize language
+        let currentLanguage = localStorage.getItem('language') || 'en';
+
+        function initializeLanguage() {
+            // Set HTML lang attribute
+            document.documentElement.lang = currentLanguage;
+
+            // Update button text
+            document.getElementById('langBtn').textContent = currentLanguage === 'en' ? 'FR' : 'EN';
+
+            // Update all translated elements
+            updateTranslations();
+        }
+
+        function updateTranslations() {
+            // Update elements with data attributes
+            document.querySelectorAll('[data-en][data-fr]').forEach(element => {
+                if (element.getAttribute('data-en') !== element.getAttribute('data-fr')) {
+                    element.textContent = currentLanguage === 'en'
+                        ? element.getAttribute('data-en')
+                        : element.getAttribute('data-fr');
+                }
+            });
+
+            // Update translation dictionary elements
+            Object.keys(translations).forEach(key => {
+                const elements = document.querySelectorAll(`[data-en="${key}"], [data-fr="${key}"]`);
+                elements.forEach(el => {
+                    if (el.hasAttribute('data-en')) {
+                        el.textContent = translations[key][currentLanguage];
+                    }
+                });
+            });
+        }
+
+        function toggleLanguage() {
+            currentLanguage = currentLanguage === 'en' ? 'fr' : 'en';
+            localStorage.setItem('language', currentLanguage);
+            initializeLanguage();
+        }
+
+        // Toggle mobile menu
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    document.getElementById('navLinks').classList.remove('active');
+                    document.querySelectorAll('.nav-links a').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                }
+            });
+        });
+
+        // Fetch recent Python projects from GitHub
+        async function loadGitHubProjects() {
+            const container = document.getElementById('github-projects');
+
+            try {
+                const response = await fetch('https://api.github.com/users/WassCodeur/repos?sort=updated&per_page=100');
+                const repos = await response.json();
+
+                const pythonRepos = repos
+                    .filter(repo => repo.language === 'Python' && !repo.fork)
+                    .slice(0, 6);
+
+                if (pythonRepos.length === 0) {
+                    const noProjects = currentLanguage === 'en'
+                        ? 'No recent Python projects found.'
+                        : 'Aucun projet Python récent trouvé.';
+                    container.innerHTML = `<p style="color: #999;">${noProjects}</p>`;
+                    return;
+                }
+
+                container.innerHTML = pythonRepos.map(repo => `
+                    <div class="project-card">
+                        <h3>${repo.name}</h3>
+                        <p>${repo.description || (currentLanguage === 'en' ? 'No description available' : 'Aucune description disponible')}</p>
+                        <div class="meta">
+                            ${repo.stargazers_count > 0 ? `<span><i class="fas fa-star" style="color: #fda400;"></i> ${repo.stargazers_count}</span>` : ''}
+                            ${repo.forks_count > 0 ? `<span><i class="fas fa-code-branch"></i> ${repo.forks_count}</span>` : ''}
+                            <span>${currentLanguage === 'en' ? 'Updated' : 'Mise à jour'} ${new Date(repo.updated_at).toLocaleDateString(currentLanguage === 'en' ? 'en-US' : 'fr-FR')}</span>
+                        </div>
+                        <a href="${repo.html_url}" target="_blank" class="project-link">${currentLanguage === 'en' ? 'View Project' : 'Voir le Projet'} →</a>
+                    </div>
+                `).join('');
+
+            } catch (error) {
+                console.error('Error loading GitHub projects:', error);
+                const errorMsg = currentLanguage === 'en'
+                    ? 'Unable to load projects at this time.'
+                    : 'Impossible de charger les projets à ce moment.';
+                container.innerHTML = `<p style="color: #999;">${errorMsg}</p>`;
+            }
+        }
+
+        // Update active nav link on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id], header[id]');
+            const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', () => {
+            initializeLanguage();
+            loadGitHubProjects();
+        });
+    </script>
+</body>
+
+</html>
