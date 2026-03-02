@@ -277,11 +277,13 @@
             <h2 data-en="newsletter" data-fr="lettre">Subscribe to My Newsletter</h2>
             <p data-en="newsletterDesc" data-fr="newsletterDescFr">Get updates on latest Python tips, open source
                 projects, and community insights delivered to your inbox.</p>
-            <form>
-                <input type="email" placeholder="your@email.com" readonly>
-                <button type="button" onclick="window.open('https://wasscodeur.substack.com', '_blank')"
-                    data-en="subscribe" data-fr="sabonn">Subscribe</button>
-            </form>
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <a href="https://wasscodeur.substack.com" target="_blank" style="flex: 1;">
+                    <button
+                        style="width: 100%; padding: 12px 25px; background: #fda400; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 500; font-size: 0.95rem;"
+                        data-en="subscribe" data-fr="sabonn">Subscribe on Substack</button>
+                </a>
+            </div>
         </div>
 
         <div class="articles-section">
@@ -382,7 +384,7 @@
             },
             {
                 name: 'Hashnode',
-                feedUrl: 'https://wasscodeur.hashnode.dev/rss.xml'
+                feedUrl: 'https://hashnode.com/@wasscodeur/rss.xml'
             }
         ];
 
