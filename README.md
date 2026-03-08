@@ -1,7 +1,7 @@
 # Wachiou BOURAIMA - WassCodeur
 *Pronunciation: Wasiu Ibrahim*
 
-**Pythonista | Backend Developer | Open Source Advocate | Google Summer of Code 2024 | Microsoft Learn Student Ambassador**
+**Python Software Developer | Backend Enthusiast | Open Source Advocate**
 
 ---
 
